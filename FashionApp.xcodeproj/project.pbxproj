@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F91386142DA74DDC00190D34 /* FashionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386132DA74DDC00190D34 /* FashionAppApp.swift */; };
+		F91386162DA74DDC00190D34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386152DA74DDC00190D34 /* ContentView.swift */; };
+		F91386182DA74DDD00190D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91386172DA74DDD00190D34 /* Assets.xcassets */; };
+		F913861B2DA74DDD00190D34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F913861A2DA74DDD00190D34 /* Preview Assets.xcassets */; };
+		F91386252DA74DDE00190D34 /* FashionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386242DA74DDE00190D34 /* FashionAppTests.swift */; };
+		F913862F2DA74DDE00190D34 /* FashionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913862E2DA74DDE00190D34 /* FashionAppUITests.swift */; };
+		F91386312DA74DDE00190D34 /* FashionAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386302DA74DDE00190D34 /* FashionAppUITestsLaunchTests.swift */; };
+		F91386422DA754CF00190D34 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F91386412DA754CF00190D34 /* FirebaseAuth */; };
+		F91386442DA754CF00190D34 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = F91386432DA754CF00190D34 /* FirebaseCore */; };
+		F91386462DA754CF00190D34 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = F91386452DA754CF00190D34 /* FirebaseFunctions */; };
+		F91386482DA7551600190D34 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F91386472DA7551600190D34 /* FirebaseAnalytics */; };
+		F913864A2DA7561D00190D34 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386492DA7561C00190D34 /* AppNavigationView.swift */; };
+		F91386522DA7575D00190D34 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913864B2DA7575D00190D34 /* APIService.swift */; };
+		F91386532DA7575D00190D34 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913864D2DA7575D00190D34 /* AuthViewModel.swift */; };
+		F91386542DA7575D00190D34 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913864F2DA7575D00190D34 /* HomeView.swift */; };
+		F91386552DA7575D00190D34 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386502DA7575D00190D34 /* LoginView.swift */; };
+		F91386572DA7598A00190D34 /* CommonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386562DA7598A00190D34 /* CommonHeader.swift */; };
+		F91386592DABC78000190D34 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F91386582DABC78000190D34 /* FirebaseDatabase */; };
+		F913865C2DABCCCE00190D34 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913865B2DABCCCE00190D34 /* Products.swift */; };
+		F913865E2DABCD5D00190D34 /* RealtimeProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913865D2DABCD5D00190D34 /* RealtimeProductService.swift */; };
+		F91386602DABCE1500190D34 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913865F2DABCE1500190D34 /* ProductListView.swift */; };
+		F91386622DABDE9800190D34 /* RealtimeFeaturedProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386612DABDE9800190D34 /* RealtimeFeaturedProductService.swift */; };
+		F91386642DABDF3600190D34 /* FeaturedProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386632DABDF3600190D34 /* FeaturedProductView.swift */; };
+		F91386662DABEAC400190D34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F91386652DABEAC400190D34 /* GoogleService-Info.plist */; };
+		F91386682DAC18D700190D34 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386672DAC18D700190D34 /* SearchView.swift */; };
+		F913866A2DAC18E700190D34 /* SignOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386692DAC18E700190D34 /* SignOutView.swift */; };
+		F913866D2DAC1F6100190D34 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913866C2DAC1F6100190D34 /* ProductDetailView.swift */; };
+		F91386702DAC20C600190D34 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913866F2DAC20C600190D34 /* CartManager.swift */; };
+		F91386722DAC214700190D34 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386712DAC214700190D34 /* CartView.swift */; };
+		F91386742DAC274F00190D34 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386732DAC274F00190D34 /* CheckoutView.swift */; };
+		F91386762DAC299100190D34 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91386752DAC299100190D34 /* SplashView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F91386212DA74DDE00190D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F91386082DA74DDB00190D34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F913860F2DA74DDC00190D34;
+			remoteInfo = FashionApp;
+		};
+		F913862B2DA74DDE00190D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F91386082DA74DDB00190D34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F913860F2DA74DDC00190D34;
+			remoteInfo = FashionApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F91386102DA74DDC00190D34 /* FashionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91386132DA74DDC00190D34 /* FashionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionAppApp.swift; sourceTree = "<group>"; };
+		F91386152DA74DDC00190D34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F91386172DA74DDD00190D34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F913861A2DA74DDD00190D34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F91386202DA74DDE00190D34 /* FashionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91386242DA74DDE00190D34 /* FashionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionAppTests.swift; sourceTree = "<group>"; };
+		F913862A2DA74DDE00190D34 /* FashionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F913862E2DA74DDE00190D34 /* FashionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionAppUITests.swift; sourceTree = "<group>"; };
+		F91386302DA74DDE00190D34 /* FashionAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F91386492DA7561C00190D34 /* AppNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
+		F913864B2DA7575D00190D34 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F913864D2DA7575D00190D34 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F913864F2DA7575D00190D34 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F91386502DA7575D00190D34 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F91386562DA7598A00190D34 /* CommonHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHeader.swift; sourceTree = "<group>"; };
+		F913865B2DABCCCE00190D34 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		F913865D2DABCD5D00190D34 /* RealtimeProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeProductService.swift; sourceTree = "<group>"; };
+		F913865F2DABCE1500190D34 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		F91386612DABDE9800190D34 /* RealtimeFeaturedProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeFeaturedProductService.swift; sourceTree = "<group>"; };
+		F91386632DABDF3600190D34 /* FeaturedProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProductView.swift; sourceTree = "<group>"; };
+		F91386652DABEAC400190D34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F91386672DAC18D700190D34 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F91386692DAC18E700190D34 /* SignOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutView.swift; sourceTree = "<group>"; };
+		F913866C2DAC1F6100190D34 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		F913866F2DAC20C600190D34 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		F91386712DAC214700190D34 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		F91386732DAC274F00190D34 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		F91386752DAC299100190D34 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F913860D2DA74DDC00190D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91386592DABC78000190D34 /* FirebaseDatabase in Frameworks */,
+				F91386462DA754CF00190D34 /* FirebaseFunctions in Frameworks */,
+				F91386442DA754CF00190D34 /* FirebaseCore in Frameworks */,
+				F91386482DA7551600190D34 /* FirebaseAnalytics in Frameworks */,
+				F91386422DA754CF00190D34 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F913861D2DA74DDE00190D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91386272DA74DDE00190D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F91386072DA74DDB00190D34 = {
+			isa = PBXGroup;
+			children = (
+				F91386652DABEAC400190D34 /* GoogleService-Info.plist */,
+				F91386122DA74DDC00190D34 /* FashionApp */,
+				F91386232DA74DDE00190D34 /* FashionAppTests */,
+				F913862D2DA74DDE00190D34 /* FashionAppUITests */,
+				F91386112DA74DDC00190D34 /* Products */,
+				F91386402DA754CF00190D34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F91386112DA74DDC00190D34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F91386102DA74DDC00190D34 /* FashionApp.app */,
+				F91386202DA74DDE00190D34 /* FashionAppTests.xctest */,
+				F913862A2DA74DDE00190D34 /* FashionAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F91386122DA74DDC00190D34 /* FashionApp */ = {
+			isa = PBXGroup;
+			children = (
+				F913866E2DAC20B200190D34 /* Manager */,
+				F913865A2DABCCB600190D34 /* Modal */,
+				F913864C2DA7575D00190D34 /* Services */,
+				F913864E2DA7575D00190D34 /* ViewModels */,
+				F91386512DA7575D00190D34 /* Views */,
+				F91386492DA7561C00190D34 /* AppNavigationView.swift */,
+				F91386132DA74DDC00190D34 /* FashionAppApp.swift */,
+				F91386152DA74DDC00190D34 /* ContentView.swift */,
+				F91386172DA74DDD00190D34 /* Assets.xcassets */,
+				F91386192DA74DDD00190D34 /* Preview Content */,
+			);
+			path = FashionApp;
+			sourceTree = "<group>";
+		};
+		F91386192DA74DDD00190D34 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F913861A2DA74DDD00190D34 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F91386232DA74DDE00190D34 /* FashionAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F91386242DA74DDE00190D34 /* FashionAppTests.swift */,
+			);
+			path = FashionAppTests;
+			sourceTree = "<group>";
+		};
+		F913862D2DA74DDE00190D34 /* FashionAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F913862E2DA74DDE00190D34 /* FashionAppUITests.swift */,
+				F91386302DA74DDE00190D34 /* FashionAppUITestsLaunchTests.swift */,
+			);
+			path = FashionAppUITests;
+			sourceTree = "<group>";
+		};
+		F91386402DA754CF00190D34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F913864C2DA7575D00190D34 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F913864B2DA7575D00190D34 /* APIService.swift */,
+				F913865D2DABCD5D00190D34 /* RealtimeProductService.swift */,
+				F91386612DABDE9800190D34 /* RealtimeFeaturedProductService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F913864E2DA7575D00190D34 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F913864D2DA7575D00190D34 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F91386512DA7575D00190D34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F913864F2DA7575D00190D34 /* HomeView.swift */,
+				F91386502DA7575D00190D34 /* LoginView.swift */,
+				F91386562DA7598A00190D34 /* CommonHeader.swift */,
+				F913865F2DABCE1500190D34 /* ProductListView.swift */,
+				F91386632DABDF3600190D34 /* FeaturedProductView.swift */,
+				F91386672DAC18D700190D34 /* SearchView.swift */,
+				F91386692DAC18E700190D34 /* SignOutView.swift */,
+				F913866C2DAC1F6100190D34 /* ProductDetailView.swift */,
+				F91386712DAC214700190D34 /* CartView.swift */,
+				F91386732DAC274F00190D34 /* CheckoutView.swift */,
+				F91386752DAC299100190D34 /* SplashView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F913865A2DABCCB600190D34 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				F913865B2DABCCCE00190D34 /* Products.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		F913866E2DAC20B200190D34 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F913866F2DAC20C600190D34 /* CartManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F913860F2DA74DDC00190D34 /* FashionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91386342DA74DDE00190D34 /* Build configuration list for PBXNativeTarget "FashionApp" */;
+			buildPhases = (
+				F913860C2DA74DDC00190D34 /* Sources */,
+				F913860D2DA74DDC00190D34 /* Frameworks */,
+				F913860E2DA74DDC00190D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FashionApp;
+			packageProductDependencies = (
+				F91386412DA754CF00190D34 /* FirebaseAuth */,
+				F91386432DA754CF00190D34 /* FirebaseCore */,
+				F91386452DA754CF00190D34 /* FirebaseFunctions */,
+				F91386472DA7551600190D34 /* FirebaseAnalytics */,
+				F91386582DABC78000190D34 /* FirebaseDatabase */,
+			);
+			productName = FashionApp;
+			productReference = F91386102DA74DDC00190D34 /* FashionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F913861F2DA74DDE00190D34 /* FashionAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91386372DA74DDE00190D34 /* Build configuration list for PBXNativeTarget "FashionAppTests" */;
+			buildPhases = (
+				F913861C2DA74DDE00190D34 /* Sources */,
+				F913861D2DA74DDE00190D34 /* Frameworks */,
+				F913861E2DA74DDE00190D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F91386222DA74DDE00190D34 /* PBXTargetDependency */,
+			);
+			name = FashionAppTests;
+			productName = FashionAppTests;
+			productReference = F91386202DA74DDE00190D34 /* FashionAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F91386292DA74DDE00190D34 /* FashionAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F913863A2DA74DDE00190D34 /* Build configuration list for PBXNativeTarget "FashionAppUITests" */;
+			buildPhases = (
+				F91386262DA74DDE00190D34 /* Sources */,
+				F91386272DA74DDE00190D34 /* Frameworks */,
+				F91386282DA74DDE00190D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F913862C2DA74DDE00190D34 /* PBXTargetDependency */,
+			);
+			name = FashionAppUITests;
+			productName = FashionAppUITests;
+			productReference = F913862A2DA74DDE00190D34 /* FashionAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F91386082DA74DDB00190D34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F913860F2DA74DDC00190D34 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F913861F2DA74DDE00190D34 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F913860F2DA74DDC00190D34;
+					};
+					F91386292DA74DDE00190D34 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F913860F2DA74DDC00190D34;
+					};
+				};
+			};
+			buildConfigurationList = F913860B2DA74DDB00190D34 /* Build configuration list for PBXProject "FashionApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F91386072DA74DDB00190D34;
+			packageReferences = (
+				F913863F2DA7542300190D34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F91386112DA74DDC00190D34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F913860F2DA74DDC00190D34 /* FashionApp */,
+				F913861F2DA74DDE00190D34 /* FashionAppTests */,
+				F91386292DA74DDE00190D34 /* FashionAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F913860E2DA74DDC00190D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F913861B2DA74DDD00190D34 /* Preview Assets.xcassets in Resources */,
+				F91386182DA74DDD00190D34 /* Assets.xcassets in Resources */,
+				F91386662DABEAC400190D34 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F913861E2DA74DDE00190D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91386282DA74DDE00190D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F913860C2DA74DDC00190D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91386722DAC214700190D34 /* CartView.swift in Sources */,
+				F91386702DAC20C600190D34 /* CartManager.swift in Sources */,
+				F91386602DABCE1500190D34 /* ProductListView.swift in Sources */,
+				F91386742DAC274F00190D34 /* CheckoutView.swift in Sources */,
+				F913866D2DAC1F6100190D34 /* ProductDetailView.swift in Sources */,
+				F913865C2DABCCCE00190D34 /* Products.swift in Sources */,
+				F91386532DA7575D00190D34 /* AuthViewModel.swift in Sources */,
+				F91386642DABDF3600190D34 /* FeaturedProductView.swift in Sources */,
+				F91386552DA7575D00190D34 /* LoginView.swift in Sources */,
+				F91386622DABDE9800190D34 /* RealtimeFeaturedProductService.swift in Sources */,
+				F91386162DA74DDC00190D34 /* ContentView.swift in Sources */,
+				F91386142DA74DDC00190D34 /* FashionAppApp.swift in Sources */,
+				F91386542DA7575D00190D34 /* HomeView.swift in Sources */,
+				F913865E2DABCD5D00190D34 /* RealtimeProductService.swift in Sources */,
+				F91386682DAC18D700190D34 /* SearchView.swift in Sources */,
+				F91386522DA7575D00190D34 /* APIService.swift in Sources */,
+				F913864A2DA7561D00190D34 /* AppNavigationView.swift in Sources */,
+				F91386762DAC299100190D34 /* SplashView.swift in Sources */,
+				F91386572DA7598A00190D34 /* CommonHeader.swift in Sources */,
+				F913866A2DAC18E700190D34 /* SignOutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F913861C2DA74DDE00190D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91386252DA74DDE00190D34 /* FashionAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91386262DA74DDE00190D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F913862F2DA74DDE00190D34 /* FashionAppUITests.swift in Sources */,
+				F91386312DA74DDE00190D34 /* FashionAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F91386222DA74DDE00190D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F913860F2DA74DDC00190D34 /* FashionApp */;
+			targetProxy = F91386212DA74DDE00190D34 /* PBXContainerItemProxy */;
+		};
+		F913862C2DA74DDE00190D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F913860F2DA74DDC00190D34 /* FashionApp */;
+			targetProxy = F913862B2DA74DDE00190D34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F91386322DA74DDE00190D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F91386332DA74DDE00190D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F91386352DA74DDE00190D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FashionApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6X242YPM5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitpareek.sosochic.FashionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F91386362DA74DDE00190D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FashionApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6X242YPM5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitpareek.sosochic.FashionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F91386382DA74DDE00190D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6X242YPM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitpareek.sosochic.FashionAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FashionApp";
+			};
+			name = Debug;
+		};
+		F91386392DA74DDE00190D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6X242YPM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitpareek.sosochic.FashionAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FashionApp";
+			};
+			name = Release;
+		};
+		F913863B2DA74DDE00190D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6X242YPM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitpareek.sosochic.FashionAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FashionApp;
+			};
+			name = Debug;
+		};
+		F913863C2DA74DDE00190D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6X242YPM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amitpareek.sosochic.FashionAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FashionApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F913860B2DA74DDB00190D34 /* Build configuration list for PBXProject "FashionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91386322DA74DDE00190D34 /* Debug */,
+				F91386332DA74DDE00190D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91386342DA74DDE00190D34 /* Build configuration list for PBXNativeTarget "FashionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91386352DA74DDE00190D34 /* Debug */,
+				F91386362DA74DDE00190D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91386372DA74DDE00190D34 /* Build configuration list for PBXNativeTarget "FashionAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91386382DA74DDE00190D34 /* Debug */,
+				F91386392DA74DDE00190D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F913863A2DA74DDE00190D34 /* Build configuration list for PBXNativeTarget "FashionAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F913863B2DA74DDE00190D34 /* Debug */,
+				F913863C2DA74DDE00190D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F913863F2DA7542300190D34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F91386412DA754CF00190D34 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F913863F2DA7542300190D34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F91386432DA754CF00190D34 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F913863F2DA7542300190D34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		F91386452DA754CF00190D34 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F913863F2DA7542300190D34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		F91386472DA7551600190D34 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F913863F2DA7542300190D34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F91386582DABC78000190D34 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F913863F2DA7542300190D34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F91386082DA74DDB00190D34 /* Project object */;
+}
